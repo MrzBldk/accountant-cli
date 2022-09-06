@@ -39,7 +39,7 @@ type Transaction struct {
 
 var db *gorm.DB
 
-func Init() {
+func init() {
 	logFile, err := os.Create("hello.log")
 	if err != nil {
 		log.Fatal(err)
