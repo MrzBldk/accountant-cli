@@ -21,5 +21,5 @@ func init() {
 	userCmd.AddCommand(createCmd)
 	createCmd.Flags().UintVarP(&userBalance, "balance", "b", 0, "User balance")
 	createCmd.MarkFlagRequired("balance")
-	createCmd.SetUsageTemplate("Usage: user create <username> --balance=<balance>")
+	createCmd.SetUsageTemplate("Usage: accountant-cli user create <username> --balance=<balance>")
 }

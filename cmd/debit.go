@@ -24,5 +24,5 @@ func init() {
 	debitCmd.Flags().UintVarP(&debitAmount, "amount", "a", 0, "Amount to be debited")
 	debitCmd.MarkFlagRequired("description")
 	debitCmd.MarkFlagRequired("amount")
-	debitCmd.SetUsageTemplate("Usage: accountant-cli credit <username> --amount=<amount> --description==<description>")
+	debitCmd.SetUsageTemplate("Usage: accountant-cli debit <username> --amount=<amount> --description==<description>")
 }
